@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Questionario</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/normalize.css">
+</head>
+<body>
+    <!-- Cabezera -->
+
+    <header>
+        <img class="logo" src="imagenes/logo.jpeg" alt="">
+        <div class="navbar">
+            <li class="link-1">Contactanos</li>
+            <li class="link-2">Nosotros</li>
+            <li class="link-3">GitHub</li>
+        </div>  
+    </header>
+
+    <!-- formulario -->
+
+    <form id="form" action="">
+        <div  class="camposForm">
+            <p class="label" for="">Nombre</p>
+            <input id="nom" type="text" placeholder="Nombre" required>
+        </div>
+        <div  class="camposForm">
+            <p class="label" for="">Correo electronico</p>
+            <input id="correo" type="email" placeholder="Correo electronico" required>
+        </div>
+        <div  class="camposForm">
+            <p class="label" for="">Direccion</p>
+            <input id="direc" type="text" placeholder="Direccion" required>
+        </div>
+        <div  class="camposForm">
+            <p class="label" for="">Numero de telefono</p>
+            <input id="num" type="text" placeholder="Número" required>
+        </div>
+        <div class="camposForm">
+            <p class="label" for="">comentarios</p>
+            <input id="comen" type="text" placeholder="Comentarios" required>
+        </div>
+        <div class="contenedor-btn">
+            <input class="boton-enviar-eliminar" type="submit" value="enviar">
+            <input class="boton-enviar-eliminar" type="reset" value="borrar">
+        </div>
+    </form>
+    <script src="js/app.js"></script>
+</body>
+</html>

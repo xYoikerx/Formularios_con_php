@@ -1,6 +1,6 @@
 *{
     font-family: sans-serif;
-    font-size:18px;
+    font-size:25px;
 }
 body{
     background-color:#d9f2fd;
@@ -42,7 +42,7 @@ form{
     align-items:center;
 }
 .camposForm{
-    height:120px;
+    height:150px;
     margin-bottom: 15px;
     margin-top: 15px;
     background-color:#fff;
@@ -102,4 +102,16 @@ input[type="email"]::placeholder{
     background-color:#1490c9;
     color:#fff;
     transition:0.2s;
+}
+.radioSi{
+    margin-left: 100px;
+}
+.radioNo{
+    margin-left: 94px;
+}
+.especial{
+    display: inline;
+    font-size:15px;
+    color:#1490c9;
+    margin-left: 25px;;
 }

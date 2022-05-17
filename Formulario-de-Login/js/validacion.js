@@ -28,6 +28,6 @@ formulario.addEventListener('submit', e=> {
         alert('contraseña incorrecta')
     }
     btnInicio.addEventListener('click', ()=>{
-        window.location.assign('E:/Formularios/Formulario de questionario/index.html');
+        window.location.assign('E:/Formularios-main-main/Formulario-de-questionario/index.html');
     })
 })

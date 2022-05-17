@@ -15,7 +15,7 @@ let validacionCompleta=7;
 
 
 btnInicio.addEventListener('click', ()=>{
-    window.location.assign('E:/Formularios/Formulario de Login/index.html');
+    window.location.assign('E:/Formularios-main-main/Formulario-de-Login/index.html');
 })
 
 formulario.addEventListener('submit', e=> {
@@ -64,7 +64,7 @@ formulario.addEventListener('submit', e=> {
     }
 
     btnRegistro.addEventListener('click', ()=>{
-        window.location.assign('E:/Formularios/Formulario de Login/index.html');
+        window.location.assign('E:/Formularios-main-main/Formulario-de-Login/index.html');
     })
 })
 

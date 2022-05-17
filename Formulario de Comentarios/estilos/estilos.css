@@ -34,9 +34,6 @@ li:hover{
     border-bottom: 1px solid #c99806;
 }
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +50,7 @@ body{
     flex-direction: column;
     margin: auto;
     margin-top: 150px;
-    width: 500px;
+    width: 600px;
 }
 
 .contenedor-comentarios img {

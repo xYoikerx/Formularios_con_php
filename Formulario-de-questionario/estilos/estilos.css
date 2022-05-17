@@ -10,6 +10,8 @@ header{
     height:100px;
     justify-content:space-between;
     background-color:white;
+    position: sticky;
+    top: 0px;
 }
 .logo{
     height:100%;

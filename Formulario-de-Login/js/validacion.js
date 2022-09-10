@@ -8,8 +8,7 @@ const contraseña = document.getElementById('contraseña');
 const formulario = document.getElementById('form');
 const btnInicio = document.getElementById('btn-inicio');
 
-formulario.addEventListener('submit', e=> {
-    e.preventDefault();
+formulario.addEventListener('submit',()=> {
     /* Validacion de ususario */
     if(expresiones.usuarios.test(usuario.value)==false){
         alert('Usuario no valido');
@@ -27,7 +26,4 @@ formulario.addEventListener('submit', e=> {
     if(expresiones.contraseña.test(contraseña.value)==false){
         alert('contraseña incorrecta')
     }
-    btnInicio.addEventListener('click', ()=>{
-        window.location.assign('E:/Formularios-main-main/Formulario-de-questionario/index.html');
-    })
 })

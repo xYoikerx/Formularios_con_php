@@ -10,13 +10,13 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/estilos.css">   
     <!-- Normalize --> 
-    <link rel="stylesheet" href="../Formulario de Login/css/normalize.css">
+    <link rel="stylesheet" href="../Formulario-de-Login/css/normalize.css">
 </head>
 <body>
     <div id="particles-js"></div>
     <br>
     <!-- ID Particles.js -->
-    <form id="form" class="form-login">
+    <form id="form" class="form-login" method="POST" action="conexionDataBase.php">
         <h5>Formulario Login</h5>
         <input id="usuario" class="controls" type="text" name="usuario" value="" placeholder="Usuario">
         <input id="contraseña" class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">

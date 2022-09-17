@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-around;
     transition:  all .5s ease-out;
+    align-items: center;
 }
 
 .welcome-back {
@@ -64,7 +65,7 @@ body {
 
 .formulario {
     width: 400px;
-    height: 600px;
+    height: 650px;
     margin-top: 5px;
     background-color: #151515;
     text-align: center;

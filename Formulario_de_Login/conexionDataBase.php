@@ -14,10 +14,10 @@
     
     if(!empty($resultado)&& mysqli_num_rows($resultado)>0){ // si cumple hay almenos un usuario encontrado () 
         $fila= mysqli_fetch_assoc($resultado); //recuperaos el registro completo que cumple la consulta              
-        if(is_null($fila['especialista_idespecialista']) && is_null($fila['voluntario_idvoluntario'])){ //el usuario logueado es afectado
+        if(is_null($fila['especialista']) && is_null($fila['voluntario'])){ //el usuario logueado es afectado
             $_idafectado =$fila['afectado_idafectado'];
             $sql = "SELECT * FROM afectado WHERE idafectado='$_idafectado'";
-            $resultadoAfectadoSQL = mysql_query($conexion, $sql);
+            $resultadoAfectadoSQL = mysqli_query($conexion, $sql);
             $filaAfectado = mysqli_fetch_assoc($resultadoAfectadoSQL);
             $_SESSION['user_tipo']= 'Usuario Afectado';
             $_SESSION['idAfectado']= $filaAfectado['idafectado'];
@@ -26,6 +26,6 @@
         }
     }
     else{
-        echo "Usuario no encontrado!!";
-        header('Location:http://localhost/SDE/Formularios/Formulario-de-Login/index.php');
+        header('Location:http://localhost/SDE/Formularios_con_php/Formulario_de_Login/index.php');
     }
+?>

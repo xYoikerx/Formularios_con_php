@@ -2,24 +2,24 @@ const expresiones={
     nombre:/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/,
     email:/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
     numeros:/^[0-9]*$/,
+    contrasena: /^.{4,12}$/,
 }
 
 const btnInicio = document.getElementById('btn-inicio')
 const btnRegistro = document.getElementById('btn-registro');
 const formulario = document.getElementById('form');
 const usuario = document.getElementById('nombre');
-const edad = document.getElementById('edad');
-const email = document.getElementById('email');
-const contraseña = document.getElementById('contraseña');
+const contrasena = document.getElementById('contrasena');
+const apellidoPaterno = document.getElementById('apellidoPaterno');
+const apellidoMaterno = document.getElementById('apellidoMaterno');
 let validacionCompleta=7;
 
 
 btnInicio.addEventListener('click', ()=>{
-    window.location.assign('E:/Formularios-main-main/Formulario-de-Login/index.html');
+    window.location.assign('http://localhost/SDE/formularios_con_php/Formulario-de-Login/index.php');
 })
 
-formulario.addEventListener('submit', e=> {
-    e.preventDefault();
+formulario.addEventListener('submit', ()=> {
     /* Validacion de ususario */
     if(expresiones.nombre.test(usuario.value)==false){
         alert('Usuario no valido');
@@ -36,31 +36,42 @@ formulario.addEventListener('submit', e=> {
         usuario.focus();
         validacionCompleta=validacionCompleta-1;
     }
-    /* Validacion de Edad*/
-
-    if(expresiones.numeros.test(edad.value)==false){
-        alert('Edad incorrecta');
-        edad.focus();
+    /*Validacion Apellido Paterno */
+    if(expresiones.nombre.test(apellidoPaterno.value)==false){
+        alert('Usuario no valido');
+        apellidoPaterno.focus();
         validacionCompleta=validacionCompleta-1;
     }
-
-    if(edad.value.length>3){
-        alert('Edad incorrecta');
-        edad.focus();
+    if(apellidoPaterno.length<2){
+        alert('Nombre de usuario muy corto');
+        apellidoPaterno.focus();
         validacionCompleta=validacionCompleta-1;
     }
-
-    if(edad.value<18){
-        alert('Edad incorrecta');
-        edad.focus();
+    if(apellidoPaterno.length>15){
+        alert('Nombre de usuario muy largo');
+        apellidoPaterno.focus();
         validacionCompleta=validacionCompleta-1;
     }
-    /* Validacion de E-mail */
-
-    if(expresiones.email.test(email.value)==false){
-        alert('Email incorrecto');
-        email.focus();
+    /* Validacion Apellido Materno*/
+    if(expresiones.nombre.test(apellidoMaterno.value)==false){
+        alert('Usuario no valido');
+        apellidoMaterno.focus();
         validacionCompleta=validacionCompleta-1;
+    }
+    if(apellidoMaterno.length<2){
+        alert('Nombre de usuario muy corto');
+        apellidoMaterno.focus();
+        validacionCompleta=validacionCompleta-1;
+    }
+    if(apellidoMaterno.length>15){
+        alert('Nombre de usuario muy largo');
+        apellidoMaterno.focus();
+        validacionCompleta=validacionCompleta-1;
+    }
+    /*Validacion contrasena*/
+
+    if(expresiones.contrasena.test(contrasena.value)==false){
+        alert('contraseña incorrecta')
     }
 
     btnRegistro.addEventListener('click', ()=>{

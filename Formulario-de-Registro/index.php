@@ -21,7 +21,7 @@
                 <button id="btn-inicio" class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
-        <form id="form" class="formulario">
+        <form id="form" class="formulario" method="POST" action="registroAfectado.php">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -35,12 +35,13 @@
                 </div>
             </div>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input id="nombre" type="text" placeholder="Nombre" required>
-            <input id="edad" type="text"placeholder="Edad" required>
-            <input id="email" type="email" placeholder="Email" required>
-            <input id="contraseña" type="password" placeholder="Contraseña" required>
+            <input name="nombre" id="nombre" type="text" placeholder="Nombre" required>
+            <input name="apellidoPaterno" id="apellidoPaterno" type="text"placeholder="Apellido Paterno" required>
+            <input name="apellidoMateno" id="apellidoMaterno" type="text" placeholder="Apellido Materno" required>
+            <input name="fechaNacimiento" id="nombre" type="date" placeholder="Fecha Nacimiento" required>
+            <input name="contrasena "id="contraseña" type="password" placeholder="Contraseña" required>
             
-            <input id="btn-registro" type="submit" value="Registrarse" class="btn-registro">
+            <input name="register" id="btn-registro" type="submit" value="Registrarse" class="btn-registro">
         </form>
     </div>
     <script src="js/particles.min.js"></script>

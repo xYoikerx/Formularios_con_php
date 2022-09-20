@@ -22,10 +22,11 @@
             $_SESSION['user_tipo']= 'Usuario Afectado';
             $_SESSION['idAfectado']= $filaAfectado['idafectado'];
             $_SESSION['User_nombre'] = $filaAfectado['nombrea'].' '.$dilaAfectado['appa'].' '.$filaAfectado['apma'];
-            header('Location:http://localhost/SDE/maquetacion_sander/index.php');  // redireccionar a la pagina `principal de afectado
+            header('Location:http://localhost/SDE/Formularios/maquetacion_sander/index.php');  // redireccionar a la pagina `principal de afectado
         }
     }
     else{
-        header('Location:http://localhost/SDE/Formularios_con_php/Formulario_de_Login/index.php');
+        echo "Usuario no encontrado!!";
+        header('Location:http://localhost/SDE/Formularios/Formulario_de_Login/index.php');
     }
-?>
+
